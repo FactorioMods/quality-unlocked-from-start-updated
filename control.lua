@@ -30,3 +30,8 @@ script.on_configuration_changed(function()
     unlock_selected_techs(force)
   end
 end)
+
+-- Multiplayer teams and scripts can create forces after initialization.
+script.on_event(defines.events.on_force_created, function(event)
+  unlock_selected_techs(event.force)
+end)

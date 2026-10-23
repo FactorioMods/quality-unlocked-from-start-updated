@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2026-10-23
+  Bugfixes:
+    - Apply quality and recycling unlocks to forces created after initialization, including multiplayer teams.
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2026-10-23
   Compatibility:
