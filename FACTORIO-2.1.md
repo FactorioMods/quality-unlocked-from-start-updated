@@ -1,24 +1,20 @@
-# Factorio 2.1 compatibility and verified tests
+# Factorio 2.1 notes
 
-Current release: **1.0.1**. Engine/API target: **Factorio 2.1.23**. Updated 2026-10-23.
+Tested with **Factorio 2.1.23**. Current fork version: **1.0.2**.
 
-## API and compatibility changes
+## Changes
 
-- Handle on_force_created so teams created after initialization receive the same quality/recycling unlocks.
-- Declare Factorio 2.1 compatibility; no confirmed additional runtime API rewrite was required.
+- Handle on_force_created so new forces receive the same unlocks as existing forces.
+- Fixed in-game changelog parsing; original entries are preserved in docs/UPSTREAM-CHANGELOG.txt.
 
-The audit used the installed runtime/prototype schemas and reviewed removed members, read-only writes, changed signatures, defines and named table arguments. Indirect calls and optional branches require manual review; this is not a formal proof of every execution path.
+## Tests
 
-## Mod-specific checks
+- Fresh forces had all six intended technologies researched and all four higher qualities unlocked.
+- The recycler recipe was enabled without surface restrictions before blanket research.
+- The tests passed in two connected-client rounds separated by restart/rejoin.
 
-Fresh multiplayer forces immediately had all six intended technologies researched, uncommon/rare/epic/legendary qualities unlocked and the recycler recipe enabled without surface restrictions. Assertions ran before research_all_technologies, in both connected-client rounds separated by save/server restart/rejoin. Version 1.0.0 failed the fresh-force test; 1.0.1 adds on_force_created.
+Tests cover fresh forces and the installed Space Age profile, not every custom progression mod.
 
-## Shared save and multiplayer checks
+Tests used private copies of saves and local host/client sessions. Raw player data and test hooks are not shipped.
 
-The final enabled mod set passed isolated map creation, copied-save migration, bridge-free save/reload and 3,000-tick behavior/simulation checks. Matching clean release archives also passed a real localhost host/client join, 30 seconds of simulation, server save/restart, client rejoin and another 30 seconds plus save, without a detected desync. The direct multiplayer feature assertions above are separate from this earlier shared smoke coverage.
-
-## Scope and limits
-
-Covers fresh-force creation and default unlock state with Space Age, not a probabilistic production/recycling quality-distribution matrix or force-reset policy. WAN and long-duration stability were not tested.
-
-Targeted API/interaction fixtures used temporary private hooks where needed. Those hooks, raw saves, profiles, credentials and logs are excluded from public source and release ZIPs. The current release ZIP is identified by the digest on its GitHub release asset. Runtime code and private fixtures are kept separate.
+The 1.0.2 patch changes changelog text and version metadata only; the feature tests above apply to the unchanged gameplay code.

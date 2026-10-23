@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2026-10-24
+  Bugfixes:
+    - Fix in-game changelog parsing.
+    - Move the original mod history to docs/UPSTREAM-CHANGELOG.txt to avoid duplicate versions and unsupported formatting.
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2026-10-23
   Bugfixes:
@@ -9,20 +16,3 @@ Version: 1.0.0
 Date: 2026-10-23
   Compatibility:
     - Declare Factorio 2.1 compatibility.
-
-Changelog
-
-Version 1.0.3
--Added a thumbnail image for the mod.
-
-Version 1.0.2
-- Recycler can now be built on all planets.
-- Planet-specific build restrictions for the Recycler have been removed.
-
-Version 1.0.1
-- Recycler is unlocked by default.
-- No research is required to use the Recycler.
-
-Version 1.0.0
-- Initial release.
-- Quality-related gameplay is available from the start of the game.

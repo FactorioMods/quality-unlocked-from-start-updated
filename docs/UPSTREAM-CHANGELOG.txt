@@ -1,0 +1,16 @@
+Changelog
+
+Version 1.0.3
+-Added a thumbnail image for the mod.
+
+Version 1.0.2
+- Recycler can now be built on all planets.
+- Planet-specific build restrictions for the Recycler have been removed.
+
+Version 1.0.1
+- Recycler is unlocked by default.
+- No research is required to use the Recycler.
+
+Version 1.0.0
+- Initial release.
+- Quality-related gameplay is available from the start of the game.

@@ -1,13 +1,18 @@
 # Quality Unlocked from Start: Updated
 
-## Factorio 2.1 compatibility and validation
+Unlocks quality tiers and recycling from the start, including for new multiplayer teams.
 
-Current release **1.0.1** targets Factorio **2.1.23**. See [API fixes, this mod's verified tests and coverage limits](FACTORIO-2.1.md).
+**Factorio 2.1 · Version 1.0.2**
 
-Factorio 2.1 update of Quality Unlocked from Start. Original author: Leo. 
+- All four higher quality tiers are available immediately.
+- The recycler recipe is available without planet restrictions.
 
-Disable the original mod before enabling this fork. Entity, item, recipe and startup setting names are retained. Mod-private runtime state belongs to the old mod identity; per-player transient UI/distribution state is rebuilt.
+## Installation
 
-Multiplayer feature checks: Fresh multiplayer forces immediately had all six intended technologies researched, uncommon/rare/epic/legendary qualities unlocked and the recycler recipe enabled without surface restrictions. Assertions ran before research_all_technologies, in both connected-client rounds separated by save/server restart/rejoin. Version 1.0.0 failed the fresh-force test; 1.0.1 adds on_force_created. See [methods and coverage limits](FACTORIO-2.1.md).
+Disable quality-unlocked-from-start before enabling this fork. Requires Space Age.
 
-See [Factorio 2.1 changes and validation](FACTORIO-2.1.md) and [original credits and license](ATTRIBUTION.md).
+[Mod Portal](https://mods.factorio.com/mod/quality-unlocked-from-start-updated) · [Downloads](https://github.com/FactorioMods/quality-unlocked-from-start-updated/releases) · [Tests and 2.1 changes](FACTORIO-2.1.md)
+
+## Credits
+
+Original mod by Leo. See [credits and license](ATTRIBUTION.md).
