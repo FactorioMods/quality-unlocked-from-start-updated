@@ -1,0 +1,13 @@
+{
+  "name": "quality-unlocked-from-start-updated",
+  "version": "1.0.0",
+  "title": "Quality Unlocked from Start: Updated",
+  "author": "Leo (original); johnmart19 / FactorioMods (2.1 fork)",
+  "factorio_version": "2.1",
+  "dependencies": [
+    "space-age",
+    "! quality-unlocked-from-start"
+  ],
+  "homepage": "https://github.com/FactorioMods/quality-unlocked-from-start-updated",
+  "description": "Factorio 2.1 update of Quality Unlocked from Start. Original author: Leo. "
+}
