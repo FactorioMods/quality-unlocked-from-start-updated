@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2026-10-24
+  Compatibility:
+    - Supports Factorio 2.1.
+  Features:
+    - Gives newly created forces the same quality and recycling unlocks as existing forces, including teams added during an ongoing game.

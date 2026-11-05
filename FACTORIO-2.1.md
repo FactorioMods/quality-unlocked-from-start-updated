@@ -1,7 +1,13 @@
-# Factorio 2.1 update
+# Factorio 2.1 notes
 
-- Declare Factorio 2.1 compatibility.
+Version **1.0.2** handles `on_force_created` so new forces receive the same quality and recycling unlocks as existing forces.
 
-Validated with Factorio 2.1.23 in an isolated full-mod environment: fresh map creation, copied-save upgrade and 1,800 simulation ticks. Combined feature checks covered production by all five advanced assembler tiers, science chest refill, nine loader variants, underground-belt build events and disabled robot charging. These checks do not establish full multiplayer or optional-overhaul compatibility.
+## Factorio 2.1.24 checks
 
-Additional checks passed: a migrated save reloaded for 1,800 ticks after removing the Black Market bridge; Even Distribution replaced real furnace fuel; Max Rate Calculator processed an assembler selection; Black Market constructed its main and item-selection windows. The furnace legacy option generated the converted smelting recipes with category lists. Interaction checks used temporary private test hooks, excluded from the distributed ZIPs.
+Fresh forces received all six intended technology unlocks before blanket research. Higher qualities were available, and assemblers crafted recyclers at Nauvis and Vulcanus pressures without a recipe surface restriction.
+
+## Earlier Factorio 2.1.23 host/client checks
+
+Fresh forces had the six intended technologies researched, all four higher qualities unlocked and the recycler recipe enabled. Two connected-client rounds passed across save, server restart and rejoin.
+
+Coverage uses the installed Space Age progression. Other progression mods may add their own requirements.
